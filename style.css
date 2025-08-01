@@ -9,7 +9,7 @@ body {
   z-index: 0;
   overflow-x: hidden;
 }
-h2 {
+section h2 {
   text-align: center;
 }
 .background-shape {
