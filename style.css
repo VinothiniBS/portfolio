@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -50,18 +51,20 @@ main section {
 }
 .project-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 2rem;
-  justify-content: center;
+  align-items: center;
 }
 .project {
   background: #ffffffee;
   border-radius: 16px;
   padding: 2rem;
-  width: 320px;
+  width: 100%;
+  max-width: 700px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   backdrop-filter: blur(5px);
+  text-align: center;
 }
 .project:hover {
   transform: translateY(-5px);
@@ -73,6 +76,11 @@ main section {
 .project p {
   margin-top: 0.8rem;
   line-height: 1.5;
+}
+.project-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
 }
 .skills-list {
   display: flex;
@@ -89,6 +97,17 @@ main section {
   font-weight: bold;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
+.contact-card {
+  background-color: #ffffffee;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.8;
+}
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -96,4 +115,20 @@ footer {
   color: white;
   margin-top: 2rem;
   font-weight: bold;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff9a9e;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+.back-to-top:hover {
+  background: #ff6b81;
 }
