@@ -33,6 +33,12 @@ main section h2 {
   margin-bottom: 2rem;
   text-shadow: 0 0 8px #aa00ff;
 }
+#about p {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 0 1rem;
+}
 .project-grid {
   display: flex;
   flex-direction: column;
@@ -91,6 +97,22 @@ main section h2 {
   text-align: center;
   font-weight: 500;
   color: #fff;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.contact-icons img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.contact-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+  cursor: pointer;
 }
 footer {
   text-align: center;
