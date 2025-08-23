@@ -27,7 +27,7 @@ nav a:hover {
 /* Grid layout for sections */
 .grid-section {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 10% 90%;
   gap: 2rem;
   align-items: start;
   padding: 3rem 5%;
