@@ -278,3 +278,66 @@ footer {
   width: 50px;
   margin-bottom: 10px;
 }
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .hero-right img {
+    width: 70%;
+    max-width: 400px;
+  }
+  .timeline-container {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .timeline-left, .timeline-right {
+    left: 0;
+  }
+  .timeline-container::after {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline-content {
+    border-left: none;
+    border-top: 3px solid #00e6e6;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .cert-grid {
+    flex-direction: column;
+  }
+  .edu-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .edu-card img {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-left h1 {
+    font-size: 26px;
+  }
+  .project-card {
+    flex-direction: column;
+  }
+  .project-img, .project-text {
+    width: 100%;
+  }
+}
