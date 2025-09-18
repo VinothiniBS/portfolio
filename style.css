@@ -31,6 +31,8 @@ a {
   background: rgba(0,0,0,1);
   position: fixed;
   top: 0;
+  left:0;
+  right:0;
   z-index: 1000; 
 }
 .navbar .logo {
@@ -57,7 +59,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 80px 50px;
-  margin-top: 70px;
+  margin-top: 100px;
   background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
 }
 .hero-left {
@@ -72,6 +74,11 @@ a {
 .hero-right {
   flex: 1;
   text-align: center;
+}
+.hero-right img {
+  width: 80%;       
+  max-width: 500px;  
+  height: auto;
 }
 
 /* About */
