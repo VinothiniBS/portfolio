@@ -2,96 +2,214 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vinothini Balasubramani | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinothini Balasubramani - Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="hero">
-    <h1>Hi, I’m Vinothini</h1>
-    <p>Data Analyst & Creative Technologist</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <a href="https://github.com/VinothiniBS/portfolio/raw/main/VinothiniB_Resume.pdf" target="_blank">Resume</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vinothini B</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="about" class="grid-section">
-      <div class="section-title"><h2>About Me</h2></div>
-      <div class="section-content">
-        <p>Data Analyst with 5+ years of experience across analytics, integration, and development. I specialize in automating workflows, building predictive models, and delivering business impact through clear visualizations. Worked on projects across sectors including telecommunications, banking, chemicals, and life sciences. Passionate about solving problems creatively using data and design.</p>
-      </div>
-    </section>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Hello, I’m <span>Vinothini Balasubramani</span></h1>
+      <p>A Data Analyst with 5+ years of experience in data analytics and integration.</p>
+      <a href="VinothiniB_Resume.pdf" class="btn">Download Resume</a>
+    </div>
+    <div class="hero-right">
+      <img src="https://github.com/VinothiniBS/portfolio/blob/9779e0ad7dffc989415b897ef42a4042e7b752ac/resources/GIF2.gif"/>
+    </div>
+  </section>
 
-    <section id="projects" class="grid-section">
-      <div class="section-title"><h2>Projects</h2></div>
-      <div class="section-content">
-        <div class="project-grid">
-          <div class="project">
-            <img src="https://img.icons8.com/?id=13014" alt="E-Commerce Icon" class="project-icon" />
-            <h3><a href="https://github.com/VinothiniBS/Ecommerce_Sales_Analysis" target="_blank">E-Commerce Sales Analysis</a></h3>
-            <p>Analyzed regional sales trends and customer behavior using Python. Forecasted demand with Prophet.</p>
-          </div>
-          <div class="project">
-            <img src="https://img.icons8.com/?id=MVj2tmasj0Pp" alt="Weather Icon" class="project-icon" />
-            <h3><a href="https://github.com/VinothiniBS/WeatherInsights" target="_blank">Weather Insights (Shiny App)</a></h3>
-            <p>Interactive app to analyze weather variables across Irish locations and seasons. Demo explores visual trends by year and season.</p>
-            <p><a href="https://ejdump-vinothini-balasubramani.shinyapps.io/weatherinsights/" target="_blank">App Link</a></p>
-          </div>
-          <div class="project">
-            <img src="https://img.icons8.com/color/96/virus.png" alt="COVID Icon" class="project-icon" />
-            <h3><a href="https://github.com/VinothiniBS/Unraveling-Covid-Dynamics" target="_blank">COVID-19 Vaccination Impact Analysis</a></h3>
-            <p>Modeled pre/post vaccination case trends using R. Achieved an MSE of 0.0702 through regression modeling to support public health policy evaluation.</p>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p style="text-align: justify;">
+      I’m passionate about turning data into insights that drive smarter decisions. Skilled in Python, R, SQL, Power BI, and Tableau, I specialize in building dashboards, optimizing ETL pipelines, and integrating data across systems. With 5+ years of experience across data analytics, integration, and full-stack development, I enjoy solving complex problems, streamlining workflows, and creating tools that make data more accessible. My background spans working with cloud platforms, SAP integration (PO/CPI), and statistical modeling, giving me a strong foundation to bridge both technical and business needs.
+    </p>
+    <p style="text-align: justify;">
+      Outside of work, I’m a determined and creative individual who enjoys hands-on projects that require patience, precision, and the ability to transform raw ideas into meaningful outcomes - qualities I carry into my professional work as well.
+    </p>
+  </section>
+
+  <!-- ===== EXPERIENCE TIMELINE ===== -->
+  <section id="experience" class="experience">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+
+      <!-- Experience 1 -->
+      <div class="timeline-container timeline-left">
+        <div class="timeline-content">
+          <h3>Data Analyst</h3>
+          <h4>Assay Genie</h4>
+          <div class="date">Jan 2024 – Mar 2025</div>
+          <ul>
+            <li>Built dashboards in Power BI & Looker Studio.</li>
+            <li>Automated ETL pipelines in Python & SQL.</li>
+            <li>Improved data accuracy by 25%.</li>
+          </ul>
+          <div class="skills">
+            <span>Python</span><span>SQL</span><span>Power BI</span><span>Looker Studio</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <section id="skills" class="grid-section">
-      <div class="section-title"><h2>Skills</h2></div>
-      <div class="section-content">
-        <ul class="skills-list">
-          <li>Python</li>
-          <li>R</li>
-          <li>SQL</li>
-          <li>Power BI</li>
-          <li>Looker Studio</li>
-          <li>Tableau</li>
-          <li>Google Apps Script</li>
-          <li>SAP PO / CPI</li>
-          <li>HTML / CSS / JavaScript</li>
-          <li>Angular</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="grid-section">
-      <div class="section-title"><h2>Contact</h2></div>
-      <div class="section-content">
-        <div class="contact-card contact-icons">
-          <a href="mailto:vinothinibalasubramani@gmail.com" target="_blank">
-            <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email" />
-          </a>
-          <a href="https://github.com/VinothiniBS" target="_blank">
-            <img src="https://img.icons8.com/?id=AZOZNnY73haj" alt="GitHub" />
-          </a>
-          <a href="https://www.linkedin.com/in/vinothinibalasubramani/" target="_blank">
-            <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
-          </a>
+      <!-- Experience 2 -->
+      <div class="timeline-container timeline-right">
+        <div class="timeline-content">
+          <h3>Data Integration Analyst</h3>
+          <h4>Tech Mahindra</h4>
+          <div class="date">Apr 2020 – Jun 2022</div>
+          <ul>
+            <li>Optimized SAP CPI workflows improving performance.</li>
+            <li>Integrated REST/SOAP APIs with SAP PO.</li>
+            <li>Led client demos & onboarding sessions.</li>
+          </ul>
+          <div class="skills">
+            <span>SAP CPI</span><span>SAP PO</span><span>SQL</span>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+      
+      <!-- Experience 3 -->
+      <div class="timeline-container timeline-left">
+        <div class="timeline-content">
+          <h3>Full Stack Developer</h3>
+          <h4>Tech Mahindra</h4>
+          <div class="date">Jun 2018 – Mar 2020</div>
+          <ul>
+            <li>Developed Angular-based web interfaces for finance tools.</li>
+            <li>Built REST APIs with Java & MySQL for data management.</li>
+            <li>Optimized front-end & back-end performance.</li>
+          </ul>
+          <div class="skills">
+            <span>Angular</span><span>HTML/CSS/JS</span><span>Java</span><span>MySQL</span><span>REST APIs</span>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <div class="project-text">
+        <h3>E-Commerce Sales Analysis</h3>
+        <p>Analyzed sales data to uncover trends, seasonal behavior, and customer patterns.</p>
+        <a href="https://github.com/VinothiniBS/Ecommerce-Sales" target="_blank" class="btn">View Project</a>
+        <div class="skills">
+          <span>Python</span><span>Pandas</span><span>Prophet</span>
+        </div>
+      </div>
+      <div class="project-img">
+        <img src="https://assets-v2.lottiefiles.com/a/41027c3c-c742-11ee-a5fb-e7d8312b6177/FEw3A4I02p.gif"/>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-text">
+        <h3>Weather Insights App</h3>
+        <p>A Shiny app with weather data visualization, seasonal trends, and variable-based stats.</p>
+        <a href="https://ejdump-vinothini-balasubramani.shinyapps.io/weatherinsights/" target="_blank" class="btn">View Project</a>
+        <div class="skills">
+          <span>R</span><span>Shiny</span><span>ggplot2</span>
+        </div>
+      </div>
+      <div class="project-img">
+        <img src="https://github.com/VinothiniBS/portfolio/blob/81a3296e563b5a1e0ec647098f73c55ca5a0da8a/resources/Weather.gif" alt="WeatherIcons"/>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-text">
+        <h3>COVID-19 Vaccination Impact Analysis</h3>
+        <p>Modeled pre/post vaccination case trends using R. Achieved an MSE of 0.0702 through regression modeling to support public health policy evaluation.</p>
+        <a href="https://github.com/VinothiniBS/Unraveling-Covid-Dynamics" target="_blank" class="btn">View Project</a>
+        <div class="skills">
+          <span>Regression</span><span>Data Analysis</span><span>Visualization</span>
+        </div>
+      </div>
+      <div class="project-img">
+        <img src="https://github.com/VinothiniBS/portfolio/blob/4373a147b47c0abd1560358e997026dcda3fb7e7/resources/CovidVaccination.gif" alt="COVID Vaccination"/>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="edu-card">
+      <img src="https://www.ucd.ie/universityrelations/t4media/crest-ucd.svg" alt="UCD Logo"/>
+      <div>
+        <h3>MSc in Data and Computational Science</h3>
+        <p>University College Dublin (2022 – 2023)</p>
+        <p><strong>Focus:</strong> Machine Learning, Computational Modeling, Advanced Analytics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/2318/2318736.png" alt="Google Icon"/>
+        <p>Google Data Analytics (2023)</p>
+      </div>
+      <div class="cert-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/1819/1819928.png" alt="Power BI Icon"/>
+        <p>Data Visualization with Power BI (2023)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+  <h2>Contact</h2>
+  <div class="contact-grid">
+    <!-- Left: Contact Form -->
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+
+    <!-- Right: Social Icons -->
+    <div class="social-icons">
+      <h3>Connect with me</h3>
+      <a href="https://github.com/yourusername" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/10096/10096702.png" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/yourusername/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn" />
+      </a>
+    </div>
+  </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>© 2025 Vinothini Balasubramani</p>
   </footer>
 
-  <a href="#" class="back-to-top" title="Back to Top">⬆</a>
 </body>
 </html>
