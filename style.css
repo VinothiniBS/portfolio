@@ -335,16 +335,15 @@ dotlottie-wc {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 15px 20px;
   }
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-  }
   .navbar .nav-links {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
     gap: 10px;
   }
   .hero-left h1 {
