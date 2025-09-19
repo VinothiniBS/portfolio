@@ -278,6 +278,13 @@ footer {
   width: 50px;
   margin-bottom: 10px;
 }
+dotlottie-wc {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /* -------------------- MEDIA QUERIES -------------------- */
 @media (max-width: 1024px) {
@@ -285,6 +292,7 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 60px 20px;
+    margin-top: 80px;
   }
   .hero-right img {
     width: 70%;
@@ -293,6 +301,10 @@ footer {
   .timeline-container {
     width: 100%;
     padding: 10px 20px;
+    margin-left: 0;
+  }
+  .timeline::after {
+    display: none;
   }
   .timeline-left, .timeline-right {
     left: 0;
@@ -327,6 +339,10 @@ footer {
     gap: 10px;
     padding: 15px 20px;
   }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
   .navbar .nav-links {
     flex-direction: column;
     gap: 10px;
@@ -339,5 +355,8 @@ footer {
   }
   .project-img, .project-text {
     width: 100%;
+  }
+  dotlottie-wc {
+    max-width: 250px;
   }
 }
