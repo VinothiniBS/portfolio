@@ -278,7 +278,7 @@ footer {
   width: 50px;
   margin-bottom: 10px;
 }
-dotlottie-wc {
+.project-img dotlottie-wc {
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -358,7 +358,7 @@ dotlottie-wc {
   .project-img, .project-text {
     width: 100%;
   }
-  dotlottie-wc {
+  .project-img dotlottie-wc {
     max-width: 250px;
   }
 }
