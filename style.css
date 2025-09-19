@@ -365,7 +365,7 @@ footer {
   .project-img, .project-text {
     width: 100%;
   }
-  .project-img dotlottie-wc {
+  dotlottie-wc {
     max-width: 250px;
   }
 }
