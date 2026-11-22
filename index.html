@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vinothini Balasubramani - Data Analyst</title>
-<meta name="description" content="Vinothini Balasubramani - Data Analyst portfolio. Python, SQL, GCP/BigQuery, dbt, Airflow and Power BI across analytics engineering, SAP integration and full-stack delivery.">
+<meta name="description" content="Vinothini Balasubramani - Data Analyst portfolio. Python, SQL, GCP/BigQuery, Databricks, dbt, Airflow and Power BI across analytics engineering, SAP integration and full-stack delivery.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,7 @@
         <div class="hero-panel-row"><span class="hp-label">Experience</span><span class="hp-value">6+ years</span></div>
         <div class="hero-panel-row"><span class="hp-label">Based in</span><span class="hp-value">Chennai, India</span></div>
         <div class="hero-panel-row"><span class="hp-label">Education</span><span class="hp-value">MSc. Data and Computational Science</span></div>
-        <div class="hero-panel-row"><span class="hp-label">Core stack</span><span class="hp-value">Python · SQL · GCP/BigQuery</span></div>
+        <div class="hero-panel-row"><span class="hp-label">Core stack</span><span class="hp-value">Python · SQL · GCP/BigQuery · Databricks</span></div>
       </div>
     </div>
   </div>
@@ -78,19 +78,19 @@
     <div class="skill-groups reveal">
       <div class="skill-group">
         <h4>Languages & Querying</h4>
-        <ul><li>Python</li><li>SQL</li><li>R</li></ul>
+        <ul><li>Python</li><li>SQL</li><li>PySpark</li><li>R</li></ul>
       </div>
       <div class="skill-group">
         <h4>Data & Cloud</h4>
-        <ul><li>GCP / BigQuery</li><li>dbt</li><li>Airflow</li><li>Oracle</li></ul>
+        <ul><li>GCP / BigQuery</li><li>Databricks / Delta Lake</li><li>dbt</li><li>Airflow</li><li>Oracle</li></ul>
       </div>
       <div class="skill-group">
         <h4>Visualization</h4>
-        <ul><li>Power BI</li><li>Looker Studio</li><li>Tableau</li></ul>
+        <ul><li>Power BI (DAX)</li><li>Looker Studio</li><li>Tableau</li></ul>
       </div>
       <div class="skill-group">
         <h4>Automation & Integration</h4>
-        <ul><li>SAP CPI / PO</li><li>Zapier</li><li>Google Apps Script</li><li>Flask / REST</li></ul>
+        <ul><li>SAP CPI / PO</li><li>Claude API (Gen-AI)</li><li>Google Apps Script</li><li>Flask / REST</li><li>Zapier</li></ul>
       </div>
     </div>
   </div>
@@ -101,7 +101,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">project work</span>
-      <h2 class="section-title">Four builds, start to finish.</h2>
+      <h2 class="section-title">Five builds, start to finish.</h2>
       <p class="section-sub">Each one started as a real question about the data and ended as something you can actually click through: a pipeline, a live dashboard, or a model.</p>
     </div>
 
@@ -110,9 +110,54 @@
       <button class="filter-pill" data-filter="pipelines">Pipelines</button>
       <button class="filter-pill" data-filter="dashboards">Dashboards</button>
       <button class="filter-pill" data-filter="modeling">Modeling</button>
+      <button class="filter-pill" data-filter="analytics">Fraud &amp; Risk</button>
     </div>
 
-    <!-- PROJECT 1: Dublin Bikes -->
+    <!-- PROJECT 1: Fraud MI Lakehouse -->
+    <div class="project-card reveal" data-category="pipelines dashboards analytics">
+      <div class="pc-visual">
+        <div class="screenshot-gallery">
+          <button class="gallery-thumb" data-full="https://github.com/VinothiniBS/fraud-mi-lakehouse/blob/main/images/01_executive_summary.png?raw=true" data-cap="Executive summary: fraud KPIs, trend, type and amount band">
+            <img src="https://github.com/VinothiniBS/fraud-mi-lakehouse/blob/main/images/01_executive_summary.png?raw=true" alt="Fraud Management Information (MI) executive summary page" loading="lazy">
+          </button>
+          <button class="gallery-thumb" data-full="https://github.com/VinothiniBS/fraud-mi-lakehouse/blob/main/images/02_fraud_deep_dive.png?raw=true" data-cap="Fraud deep-dive: overnight fraud spike and the control test">
+            <img src="https://github.com/VinothiniBS/fraud-mi-lakehouse/blob/main/images/02_fraud_deep_dive.png?raw=true" alt="Fraud deep-dive page" loading="lazy">
+          </button>
+          <button class="gallery-thumb" data-full="https://github.com/VinothiniBS/fraud-mi-lakehouse/blob/main/images/03_data_quality.png?raw=true" data-cap="Data quality: balance reconciliation checks by transaction type">
+            <img src="https://github.com/VinothiniBS/fraud-mi-lakehouse/blob/main/images/03_data_quality.png?raw=true" alt="Data quality page" loading="lazy">
+          </button>
+        </div>
+      </div>
+      <div class="pc-body">
+        <span class="pc-index">PROJECT 01 / 05</span>
+        <div class="pc-head">
+          <span class="project-tag">Lakehouse · Management Information</span>
+          <div class="project-tools">
+            <span class="tag">Databricks</span><span class="tag">PySpark</span><span class="tag">Delta Lake</span><span class="tag">SQL</span><span class="tag">Power BI</span>
+          </div>
+        </div>
+        <h3 class="project-title">Fraud &amp; Financial Crime Management Information (MI) Lakehouse</h3>
+        <p class="project-desc">A fraud Management Information (MI) project on 6.3 million transactions: built into a layered lakehouse on Databricks, analysed in SQL, and reported in Power BI, to answer one question: how well does the existing fraud control work, and what would work better?</p>
+
+        <div class="project-block-label">How it works</div>
+        <ul class="project-list">
+          <li>Raw transactions loaded into Delta tables, then cleaned and aggregated with PySpark into reporting tables, with data quality checks built in</li>
+          <li>Seven SQL analyses covering fraud by type, amount, account behaviour and time of day, plus a control test comparing candidate rules on precision and recall</li>
+          <li>Three-page Power BI report on a star schema with DAX measures: executive summary, fraud deep-dive and a data quality page</li>
+        </ul>
+
+        <div class="finding-box">
+          <div class="flabel">Outcome</div>
+          <p>The existing rule caught only 0.2% of fraud. Combining three signals (transaction type, an emptied account and overnight timing) caught 24% at 55% precision: 124 times more fraud for a workload an operations team could handle.</p>
+        </div>
+
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/VinothiniBS/fraud-mi-lakehouse" target="_blank" rel="noopener">View Repository →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2: Dublin Bikes -->
     <div class="project-card reveal" data-category="pipelines dashboards">
       <div class="pc-visual">
         <iframe
@@ -123,7 +168,7 @@
           title="Dublin Bikes Looker Studio dashboard"></iframe>
       </div>
       <div class="pc-body">
-        <span class="pc-index">PROJECT 01 / 04</span>
+        <span class="pc-index">PROJECT 02 / 05</span>
         <div class="pc-head">
           <span class="project-tag">Data Engineering · Orchestration</span>
           <div class="project-tools">
@@ -152,7 +197,7 @@
       </div>
     </div>
 
-    <!-- PROJECT 2: E-Commerce -->
+    <!-- PROJECT 3: E-Commerce -->
     <div class="project-card reveal" data-category="modeling">
       <div class="pc-visual">
         <div class="screenshot-gallery">
@@ -171,7 +216,7 @@
         </div>
       </div>
       <div class="pc-body">
-        <span class="pc-index">PROJECT 02 / 04</span>
+        <span class="pc-index">PROJECT 03 / 05</span>
         <div class="pc-head">
           <span class="project-tag">Forecasting · Customer Segmentation</span>
           <div class="project-tools">
@@ -199,7 +244,7 @@
       </div>
     </div>
 
-    <!-- PROJECT 3: Weather -->
+    <!-- PROJECT 4: Weather -->
     <div class="project-card reveal" data-category="dashboards">
       <div class="pc-visual">
         <iframe
@@ -208,7 +253,7 @@
           title="Irish Weather Insights R Shiny app"></iframe>
       </div>
       <div class="pc-body">
-        <span class="pc-index">PROJECT 03 / 04</span>
+        <span class="pc-index">PROJECT 04 / 05</span>
         <div class="pc-head">
           <span class="project-tag">Interactive Dashboard · R Shiny</span>
           <div class="project-tools">
@@ -236,7 +281,7 @@
       </div>
     </div>
 
-    <!-- PROJECT 4: COVID -->
+    <!-- PROJECT 5: COVID -->
     <div class="project-card reveal" data-category="modeling">
       <div class="pc-visual">
         <div class="screenshot-gallery">
@@ -255,7 +300,7 @@
         </div>
       </div>
       <div class="pc-body">
-        <span class="pc-index">PROJECT 04 / 04</span>
+        <span class="pc-index">PROJECT 05 / 05</span>
         <div class="pc-head">
           <span class="project-tag">Regression · Anomaly Detection</span>
           <div class="project-tools">
@@ -313,12 +358,14 @@
             <ul class="tl-bullets">
               <li>Developed a Python-based application to automate bulk product datasheet generation across all product categories, replacing manual workflows and accelerating the introduction of 50+ new products per month.</li> 
               <li>Migrated and scaled the QC application to GCP and BigQuery, enabling deep-level datasheet validation across 2/3 of product categories with significantly improved accuracy and performance over the previous system.</li>
+              <li>Integrated Gen-AI (Claude API) into the QC application to generate product manuals automatically from datasheet content using predefined templates, reducing manual documentation work.</li>
               <li>Built a Python-based HTML content generator for website product pages, streamlining bulk and individual product additions and ensuring consistency across the catalogue.</li> 
               <li>Maintain and enhance BigCommerce and Doofinder data pipelines using Python and Google Apps Script, ensuring website performance, product data accuracy, and seamless catalogue management across 120,000+ product records.</li>
+              <li>Integrated price file data into a Cloud SQL database on GCP to centralise pricing in a single queryable source; now handle bulk price updates and corrections through SQL, with routine Python data quality checks on the pricing data.</li>
               <li>Enhance and maintain Looker Studio dashboards and generate operational reports across logistics, sales, and leadership teams, building on the self-service analytics foundation established in the previous role.</li>
             </ul>
             <div class="tag-row">
-              <span class="tag">Python</span><span class="tag">GCP</span><span class="tag">BigQuery</span><span class="tag">Automation</span><span class="tag">ETL</span>
+              <span class="tag">Python</span><span class="tag">GCP</span><span class="tag">BigQuery</span><span class="tag">Cloud SQL</span><span class="tag">Gen-AI</span><span class="tag">ETL</span>
             </div>
           </div>
         </div>
@@ -340,7 +387,7 @@
             <ul class="tl-bullets">
               <li>Designed Looker Studio dashboards for logistics and sales teams, integrating Cin7 API data via Python and Google Apps Script to automate weekly performance reporting and deliver real-time operational tracking, saving 8+ hours per month.</li> 
               <li>Developed an automated QC and datasheet generation application covering 1/3 of product categories, reducing documentation preparation time and enabling faster quality checks for the team.</li> 
-              <li>Built Python-based predictive models that improved inventory accuracy and reduced overstock by a quarter of usual levels, directly impacting working capital.</li>
+              <li>Built Python predictive models for inventory planning that improved inventory accuracy and reduced overstock by around 25% in a key product category, directly impacting working capital.</li>
               <li>Maintained and managed a price file of 100,000+ products in Google Sheets, handling product additions, modifications, and data accuracy across the full catalogue.</li>
             </ul>
             <div class="tag-row">
@@ -364,7 +411,7 @@
         <div class="accordion-panel">
           <div class="accordion-panel-inner">
             <ul class="tl-bullets">
-              <li>Designed and delivered SAP CPI/PO integration pipelines for enterprise clients, reducing sync errors by 40% and ensuring reliable data flow across mission-critical systems.</li>
+              <li>Designed and delivered 50+ SAP CPI/PO integration pipelines for enterprise clients, reducing sync errors by 40% and ensuring reliable data flow across mission-critical systems.</li>
               <li>Resolved 100+ EDI transformation issues with consistent turnaround, improving resolution speed by 35%.</li>
               <li>Developed SQL scripts for database schema design and data loading across Oracle databases, supporting accurate data availability for downstream reporting teams.</li>
             </ul>
@@ -446,7 +493,7 @@
   <div class="wrap contact-center">
     <span class="eyebrow reveal">reach out</span>
     <h2 class="contact-title reveal">Got a data problem worth solving?</h2>
-    <p class="contact-sub reveal">Open to Data Analyst and Analytics Engineering roles.</p>
+    <p class="contact-sub reveal">Open to Data Analyst, Analytics Engineering and Data Engineering roles in Europe.</p>
 
     <div class="contact-chip-row reveal">
       <a class="slink" href="https://github.com/VinothiniBS" target="_blank" rel="noopener">
